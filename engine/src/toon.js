@@ -103,6 +103,8 @@ const PROPS = {
     g.beginPath(); g.roundRect(-14, -60, 28, 120, 12); g.fill(); g.stroke(); g.fillStyle = '#b8323a'; g.fillRect(-14, -4, 28, 9); g.restore(); },
   pen(g, x, y, s) { g.save(); g.translate(x, y); g.rotate(-.7 * s); g.strokeStyle = PLUM; g.lineWidth = 5; g.fillStyle = '#c99a5a';
     g.beginPath(); g.moveTo(-5, -60); g.lineTo(5, -60); g.lineTo(3, 24); g.lineTo(0, 34); g.lineTo(-3, 24); g.closePath(); g.fill(); g.stroke(); g.restore(); },
+  mallet(g, x, y, s) { g.save(); g.translate(x, y); g.rotate(-.9 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#9a6a3a';
+    g.beginPath(); g.roundRect(-6, -76, 12, 96, 5); g.fill(); g.stroke(); g.fillStyle = '#b5845a'; g.beginPath(); g.roundRect(-34, -118, 68, 46, 10); g.fill(); g.stroke(); g.restore(); },
   spoon(g, x, y, s) { g.save(); g.translate(x, y); g.rotate(.2 * s); g.strokeStyle = PLUM; g.lineWidth = 6; g.fillStyle = '#a8763e';
     g.beginPath(); g.roundRect(-5, -10, 10, 80, 5); g.fill(); g.stroke(); g.beginPath(); g.ellipse(0, 84, 16, 22, 0, 0, 6.29); g.fill(); g.stroke(); g.restore(); },
 };
@@ -132,6 +134,15 @@ function hat(g, kind, w, h, look, lit) {
     g.strokeStyle = PLUM; cap(); g.stroke();
     g.fillStyle = shade(col, .62); g.beginPath(); g.roundRect(-w * .48, -h * .47, w * .96, h * .11, 12); g.fill(); g.stroke();
     g.strokeStyle = shade(col, 1.35); g.lineWidth = 3; g.setLineDash([9, 9]); g.beginPath(); g.moveTo(-w * .42, -h * .415); g.lineTo(w * .42, -h * .415); g.stroke(); g.setLineDash([]);
+  } else if (kind === 'tac') {                         // a small gold crown with gems, sitting on the hair (a sultan's daughter)
+    const cw = w * .44, y0 = -h * .46, ch = h * .2;
+    const crown = () => { g.beginPath(); g.moveTo(-cw / 2, y0); g.lineTo(-cw / 2, y0 - ch * .55);
+      for (let k = 0; k < 5; k++) { const x0 = -cw / 2 + k * cw / 5; g.lineTo(x0 + cw / 10, y0 - ch * (k === 2 ? 1.25 : 1)); g.lineTo(x0 + cw / 5, y0 - ch * .55); }
+      g.lineTo(cw / 2, y0); g.closePath(); };
+    shaded(g, crown, { cx: 0, cy: y0 - ch * .5, w: cw, h: ch }, '#ffd45a', '#c48a22', { lit, blur: 8, push: .2, lift: .1 });
+    g.strokeStyle = PLUM; g.lineWidth = OUT - 3; crown(); g.stroke();
+    for (const [x, c] of [[-.3, '#3f86d6'], [0, '#e0384a'], [.3, '#3fb89a']]) { g.fillStyle = c; g.beginPath(); g.arc(cw * x, y0 - ch * .3, 9, 0, 6.29); g.fill(); g.lineWidth = 4; g.stroke(); }
+    g.fillStyle = '#ffffff'; g.beginPath(); g.arc(0, y0 - ch * 1.3, 8, 0, 6.29); g.fill(); g.lineWidth = 4; g.stroke();
   } else if (kind === 'cook') {                        // a toque: puffy top, straight band
     const o = -h * .1;
     const puff = () => { g.beginPath(); g.moveTo(-w * .3, o - h * .5); g.bezierCurveTo(-w * .62, o - h * .62, -w * .46, o - h * 1.12, -w * .12, o - h * .98);
@@ -186,6 +197,7 @@ function face(g, w, h, f, L) {
         g.save(); g.beginPath(); g.rect(-rx * 3, 0, rx * 6, ry * 3); g.clip();
         g.beginPath(); g.ellipse(gx * q * 1.4, gy * .5, rx, ry, 0, 0, 6.29); g.fill(); g.restore();   // the lower half of a disc
         g.lineWidth = lw; g.beginPath(); g.moveTo(-hl, 0); g.lineTo(hl, 0); g.stroke();
+        if (L.lashes) { g.lineWidth = lw * .7; g.beginPath(); g.moveTo(s * hl * .9, 0); g.lineTo(s * hl * 1.32, -w * .03); g.moveTo(s * hl * .55, -w * .004); g.lineTo(s * hl * .9, -w * .04); g.stroke(); }
       }
       g.restore();
     } else if (E.eye === 'round') {                                           // wide open: two white discs that touch
@@ -198,6 +210,7 @@ function face(g, w, h, f, L) {
       g.beginPath(); g.ellipse(x + gx, ey + gy, w * .046 * q, w * .074, 0, 0, 6.29); g.fill();
     }
   }
+  if (L.blush) { g.save(); g.globalAlpha = .38; g.fillStyle = L.blush; blurOn(g, 4); for (const s of [-1, 1]) { g.beginPath(); g.ellipse(fx + s * w * .23, fy + h * .1, w * .065, w * .035, 0, 0, 6.29); g.fill(); } g.restore(); g.filter = 'none'; }
   // mouth
   const mx = fx + turn * w * .03, my = fy + h * .2, m = clamp(f.mouth || 0, 0, 1), sg = turn < 0 ? -1 : 1;
   g.strokeStyle = PLUM; g.lineWidth = lw * .95;
@@ -322,17 +335,29 @@ export class Toon {
     g.translate(cx, SOLE); if (p.flip) g.scale(-1, 1); g.rotate((p.lean || 0) * D2R); g.translate(-cx, -SOLE);
     const hw = L.headW || 276, hh = L.headH || 258;     // 3.5 heads tall
     const bob = p.bob || 0;
-    const sit = L.body === 'sit', robe = L.body === 'robe' || sit;
-    const bodyTop = 306 + bob, bodyBot = sit ? 820 : robe ? 965 : 648 + bob * .5;
+    const sit = L.body === 'sit', gown = L.body === 'gown', robe = L.body === 'robe' || sit || gown;
+    const bodyTop = 306 + bob, bodyBot = sit ? 820 : gown ? 1004 : robe ? 965 : 648 + bob * .5;
+    if (L.longHair) {                                                         // hair down to the heels, behind everything (sway: -1..1)
+      const sw = (p.sway || 0) * 46, hc = L.longHair, top = 200 + bob - hh * .2;
+      const hairP = () => { g.beginPath(); g.moveTo(cx - hw * .5, top);
+        g.bezierCurveTo(cx - hw * .66, 470, cx - hw * .66 - sw * .6, 760, cx - hw * .8 - sw * 1.3, SOLE - 6);
+        for (let k = 0; k < 6; k++) { const x0 = cx - hw * .8 - sw * 1.3 + k * (hw * 1.6) / 6; g.quadraticCurveTo(x0 + hw * .8 / 6, SOLE + 16, x0 + hw * 1.6 / 6, SOLE - 6); }
+        g.bezierCurveTo(cx + hw * .66 - sw * .6, 760, cx + hw * .66, 470, cx + hw * .5, top); g.closePath(); };
+      under(g, hairP, lit, .7);
+      shaded(g, hairP, { cx, cy: 600, w: hw * 1.5, h: 800 }, hc, shade(hc, .6), { lit, blur: 18, push: .16, lift: .05 });
+      g.save(); hairP(); g.clip(); g.strokeStyle = shade(hc, 1.5); g.lineWidth = 4; g.lineCap = 'round'; g.globalAlpha = .55;
+      for (let k = -3; k <= 3; k++) { g.beginPath(); g.moveTo(cx + k * hw * .1, top + 80); g.bezierCurveTo(cx + k * hw * .13, 520, cx + k * hw * .16 - sw * .5, 780, cx + k * hw * .2 - sw * 1.2, SOLE - 30); g.stroke(); }
+      g.restore(); ink(g, hairP);
+    }
     const bw = L.bodyW || 184;
     // legs
     if (!robe) for (const s of [-1, 1]) {
       g.strokeStyle = PLUM; g.lineWidth = LIMB; g.lineCap = 'round';
       const fx = cx + s * 40; g.beginPath(); g.moveTo(cx + s * 36, bodyBot - 20); g.lineTo(fx, SOLE - 14); g.stroke();
       g.fillStyle = PLUM; g.beginPath(); g.ellipse(fx + s * 13, SOLE - 12, 27, 13, 0, 0, 6.29); g.fill();
-    } else if (!sit) for (const s of [-1, 1]) { g.fillStyle = PLUM; g.beginPath(); g.ellipse(cx + s * 50, SOLE - 12, 30, 14, 0, 0, 6.29); g.fill(); }
+    } else if (!sit && !gown) for (const s of [-1, 1]) { g.fillStyle = PLUM; g.beginPath(); g.ellipse(cx + s * 50, SOLE - 12, 30, 14, 0, 0, 6.29); g.fill(); }
     // body: a pill (coat) or a bell (robe)
-    const tw = bw * (robe ? .8 : .86), bwid = sit ? bw * 1.85 : robe ? bw * 1.3 : bw;
+    const tw = bw * (robe ? .8 : .86), bwid = sit ? bw * 1.85 : gown ? bw * (1.75 + (p.flare || 0)) : robe ? bw * 1.3 : bw;
     const bodyPath = () => {
       g.beginPath();
       g.moveTo(cx - tw / 2, bodyTop + 26);
@@ -348,7 +373,8 @@ export class Toon {
     shaded(g, bodyPath, bb, cloth, L.clothDark || shade(cloth, .62), { lit, blur: 18, push: .2, lift: .1 });   // the torso's gradient is strong: 1 -> 0.6
     g.save(); bodyPath(); g.clip();
     if (L.pattern === 'stripes') { g.strokeStyle = shade(cloth, .6); g.lineWidth = 6; g.globalAlpha = .55; for (let x = cx - 160; x < cx + 160; x += 24) { g.beginPath(); g.moveTo(x, bodyTop); g.lineTo(x, bodyBot); g.stroke(); } g.globalAlpha = 1; }
-    if (L.trim) {
+    if (gown && L.trim) { g.fillStyle = L.trim; for (let x = cx - bwid; x < cx + bwid; x += 34) { g.beginPath(); g.arc(x, bodyBot - 40, 7, 0, 6.29); g.fill(); } for (let y = bodyTop + 60; y < bodyBot - 60; y += 70) for (const dx of [-.22, .22]) { g.beginPath(); g.arc(cx + dx * bwid * (y - bodyTop) / (bodyBot - bodyTop) * 1.6, y, 6, 0, 6.29); g.fill(); } }
+    if (L.trim && !gown) {
       g.fillStyle = L.trim; g.fillRect(cx - 10, bodyTop, 20, bodyBot - bodyTop);
       g.strokeStyle = shade(L.trim, .62); g.lineWidth = 3; g.beginPath(); g.moveTo(cx - 10, bodyTop); g.lineTo(cx - 10, bodyBot); g.moveTo(cx + 10, bodyTop); g.lineTo(cx + 10, bodyBot); g.stroke();
       g.fillStyle = L.trim; g.fillRect(cx - bwid, bodyBot - 46, bwid * 2, 14);                                  // hem band
@@ -389,7 +415,13 @@ export class Toon {
     if (L.hat && L.hatBack) hat(g, L.hat, hw, hh, L, lit);
     under(g, hp, lit);
     shaded(g, hp, hb, '#ffffff', p.shade || L.shade || '#e6e1f4', { lit, blur: 15, push: .09, lift: .08, grow: 1.02 });   // white; a lavender crescent (x0.89) at the far edge only
-    if (L.hair) {                                                             // what shows under the hat: a patch at the back of the head
+    if (L.longHair) {                                                         // the hair on top of the head, parted in the middle
+      const sl = clamp(p.look || 0, -1, 1) * hw * .08;
+      g.save(); hp(); g.clip(); g.fillStyle = L.longHair; g.strokeStyle = PLUM; g.lineWidth = 7;
+      g.beginPath(); g.moveTo(-hw * .7, hh * .1); g.quadraticCurveTo(-hw * .5, -hh * .3, sl, -hh * .36); g.quadraticCurveTo(hw * .5, -hh * .3, hw * .7, hh * .1); g.lineTo(hw * .7, -hh); g.lineTo(-hw * .7, -hh); g.closePath(); g.fill(); g.stroke();
+      g.strokeStyle = shade(L.longHair, 1.6); g.lineWidth = 4; g.beginPath(); g.moveTo(sl, -hh * .36); g.lineTo(sl * .5, -hh * .52); g.stroke(); g.restore();
+    }
+    if (L.hair && !L.longHair) {                                              // what shows under the hat: a patch at the back of the head
       const sgn = (p.look || 0) < 0 ? 1 : -1;
       g.save(); hp(); g.clip(); g.fillStyle = L.hair; g.strokeStyle = PLUM; g.lineWidth = 8;
       g.beginPath(); g.ellipse(sgn * hw * .56, -hh * .16, hw * .25, hh * .46, sgn * .12, 0, 6.29); g.fill(); g.stroke(); g.restore();
