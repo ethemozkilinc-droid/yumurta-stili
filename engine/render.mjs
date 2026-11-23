@@ -14,7 +14,7 @@ const story = process.argv[2] || 'is-odasi';
 const SD = path.join(here, '..', 'stories', story), OUT = path.join(SD, 'out'); fs.mkdirSync(OUT, { recursive: true });
 const scale = +(args.scale || 1);
 const CHROME = findChrome();
-const ANGLE = process.platform === 'win32' ? ['--use-angle=d3d11'] : process.platform === 'darwin' ? ['--use-angle=metal'] : [];
+const ANGLE = process.platform === 'win32' ? ['--use-angle=d3d11'] : process.platform === 'darwin' ? ['--use-angle=metal'] : ['--no-sandbox', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'];
 
 const { server, port } = await startServer();
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new', protocolTimeout: 0,
