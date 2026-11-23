@@ -468,7 +468,7 @@ function cameraPath() {
     { t: t('Bakın') + .12, dur: .3, move: 'whip', pos: [px - .7, 1.55, 5.4], look: [px + .25, 1.15, -.8], fov: 50, creep: .26, drift: .05 },
     { t: t('Sinan', 2) + .35, dur: .6, pos: [px - 2.4, 1.45, 2.3], look: [px - 1.4, 1.35, .1], fov: 38, creep: .3, drift: .04 },
     { t: t('padişahın') + .35, dur: .8, pos: [px + .9, 1.32, 2.5], look: [px + .4, 1.2, -.85], fov: 38, creep: .28, drift: -.05 },
-    { t: t('deliler') + .25, dur: .55, pos: [px - 2.1, 1.6, 1.75], look: [px - 1.48, 1.62, .2], fov: 30, creep: .32, drift: .03 },
+    { t: t('deliler') + .25, dur: .55, pos: [px - 2.0, 1.65, 2.6], look: [px - 1.3, 1.6, .2], fov: 34, creep: .32, drift: .03 },
     // "Kavuşmak mı? Olacak iş değil.": the guard laughs, the gate closes
     { t: t('Kavuşmak') + .2, dur: .5, pos: [px + 1.4, 1.55, 1.7], look: [px + 2.3, 1.3, -1.9], fov: 40, creep: .28, drift: .05 },
     // "Sinan da aşkını taşa yazıyor.": the stone, the chisel

@@ -1,0 +1,580 @@
+{
+ "words": [
+  {
+   "word": "Mimar",
+   "start": 0.0,
+   "end": 0.56
+  },
+  {
+   "word": "Sinan,",
+   "start": 0.56,
+   "end": 0.92
+  },
+  {
+   "word": "aşamadığı",
+   "start": 0.92,
+   "end": 1.6
+  },
+  {
+   "word": "bir",
+   "start": 1.6,
+   "end": 1.74
+  },
+  {
+   "word": "aşkı",
+   "start": 1.74,
+   "end": 2.16
+  },
+  {
+   "word": "iki",
+   "start": 2.16,
+   "end": 2.4
+  },
+  {
+   "word": "camiye",
+   "start": 2.4,
+   "end": 2.9
+  },
+  {
+   "word": "sakladı:",
+   "start": 2.9,
+   "end": 3.56
+  },
+  {
+   "word": "biri",
+   "start": 3.96,
+   "end": 4.18
+  },
+  {
+   "word": "güneşi",
+   "start": 4.18,
+   "end": 4.52
+  },
+  {
+   "word": "uğurluyor,",
+   "start": 4.52,
+   "end": 5.36
+  },
+  {
+   "word": "öbürü",
+   "start": 5.36,
+   "end": 5.7
+  },
+  {
+   "word": "ayı",
+   "start": 5.7,
+   "end": 6.02
+  },
+  {
+   "word": "karşılıyor.",
+   "start": 6.02,
+   "end": 6.66
+  },
+  {
+   "word": "Bakın,",
+   "start": 7.18,
+   "end": 7.4
+  },
+  {
+   "word": "anlatılana",
+   "start": 7.4,
+   "end": 7.96
+  },
+  {
+   "word": "göre",
+   "start": 7.96,
+   "end": 8.16
+  },
+  {
+   "word": "Sinan",
+   "start": 8.16,
+   "end": 8.54
+  },
+  {
+   "word": "ellisinde,",
+   "start": 8.54,
+   "end": 9.36
+  },
+  {
+   "word": "evli",
+   "start": 9.46,
+   "end": 9.76
+  },
+  {
+   "word": "ve",
+   "start": 9.76,
+   "end": 10.04
+  },
+  {
+   "word": "padişahın",
+   "start": 10.04,
+   "end": 10.64
+  },
+  {
+   "word": "kızı",
+   "start": 10.64,
+   "end": 10.9
+  },
+  {
+   "word": "Mihrimah",
+   "start": 10.9,
+   "end": 11.35
+  },
+  {
+   "word": "Sultan'a",
+   "start": 11.35,
+   "end": 11.8
+  },
+  {
+   "word": "deliler",
+   "start": 11.8,
+   "end": 12.26
+  },
+  {
+   "word": "gibi",
+   "start": 12.26,
+   "end": 12.48
+  },
+  {
+   "word": "âşık.",
+   "start": 12.48,
+   "end": 13.08
+  },
+  {
+   "word": "Kavuşmak",
+   "start": 13.38,
+   "end": 13.86
+  },
+  {
+   "word": "mı?",
+   "start": 13.86,
+   "end": 14.2
+  },
+  {
+   "word": "Olacak",
+   "start": 14.2,
+   "end": 14.64
+  },
+  {
+   "word": "iş",
+   "start": 14.64,
+   "end": 14.8
+  },
+  {
+   "word": "değil.",
+   "start": 14.8,
+   "end": 15.24
+  },
+  {
+   "word": "Sinan",
+   "start": 15.62,
+   "end": 15.88
+  },
+  {
+   "word": "da",
+   "start": 15.88,
+   "end": 16.0
+  },
+  {
+   "word": "aşkını",
+   "start": 16.0,
+   "end": 16.42
+  },
+  {
+   "word": "taşa",
+   "start": 16.42,
+   "end": 16.76
+  },
+  {
+   "word": "yazıyor.",
+   "start": 16.76,
+   "end": 17.34
+  },
+  {
+   "word": "Önce",
+   "start": 17.74,
+   "end": 17.96
+  },
+  {
+   "word": "Üsküdar'a",
+   "start": 17.96,
+   "end": 18.4
+  },
+  {
+   "word": "bir",
+   "start": 18.4,
+   "end": 18.48
+  },
+  {
+   "word": "cami:",
+   "start": 18.48,
+   "end": 18.98
+  },
+  {
+   "word": "uzaktan",
+   "start": 19.32,
+   "end": 19.68
+  },
+  {
+   "word": "bakınca,",
+   "start": 19.68,
+   "end": 20.0
+  },
+  {
+   "word": "etekleri",
+   "start": 20.0,
+   "end": 20.44
+  },
+  {
+   "word": "yerleri",
+   "start": 20.44,
+   "end": 20.84
+  },
+  {
+   "word": "süpüren",
+   "start": 20.84,
+   "end": 21.2
+  },
+  {
+   "word": "bir",
+   "start": 21.2,
+   "end": 21.32
+  },
+  {
+   "word": "kadın.",
+   "start": 21.32,
+   "end": 22.1
+  },
+  {
+   "word": "Sonra",
+   "start": 22.26,
+   "end": 22.48
+  },
+  {
+   "word": "Edirnekapı'da,",
+   "start": 22.48,
+   "end": 23.24
+  },
+  {
+   "word": "şehrin",
+   "start": 23.24,
+   "end": 23.84
+  },
+  {
+   "word": "en",
+   "start": 23.84,
+   "end": 24.04
+  },
+  {
+   "word": "yüksek",
+   "start": 24.04,
+   "end": 24.4
+  },
+  {
+   "word": "tepelerinden",
+   "start": 24.4,
+   "end": 24.94
+  },
+  {
+   "word": "birine",
+   "start": 24.94,
+   "end": 25.24
+  },
+  {
+   "word": "ikincisi.",
+   "start": 25.24,
+   "end": 25.92
+  },
+  {
+   "word": "Tek",
+   "start": 26.28,
+   "end": 26.5
+  },
+  {
+   "word": "minare,",
+   "start": 26.5,
+   "end": 27.22
+  },
+  {
+   "word": "incecik",
+   "start": 27.22,
+   "end": 27.9
+  },
+  {
+   "word": "bir",
+   "start": 27.96,
+   "end": 28.04
+  },
+  {
+   "word": "kubbe",
+   "start": 28.04,
+   "end": 28.4
+  },
+  {
+   "word": "ve",
+   "start": 28.4,
+   "end": 28.58
+  },
+  {
+   "word": "kubbeyi",
+   "start": 28.58,
+   "end": 29.06
+  },
+  {
+   "word": "delen",
+   "start": 29.06,
+   "end": 29.32
+  },
+  {
+   "word": "yüzlerce",
+   "start": 29.32,
+   "end": 30.02
+  },
+  {
+   "word": "pencere.",
+   "start": 30.08,
+   "end": 30.96
+  },
+  {
+   "word": "İçerideki",
+   "start": 30.96,
+   "end": 31.64
+  },
+  {
+   "word": "sarkıtlar,",
+   "start": 31.64,
+   "end": 32.2
+  },
+  {
+   "word": "onun",
+   "start": 32.54,
+   "end": 32.74
+  },
+  {
+   "word": "topuklarına",
+   "start": 32.74,
+   "end": 33.42
+  },
+  {
+   "word": "dökülen",
+   "start": 33.42,
+   "end": 33.8
+  },
+  {
+   "word": "saçlarını",
+   "start": 33.98,
+   "end": 34.4
+  },
+  {
+   "word": "andırıyor.",
+   "start": 34.4,
+   "end": 35.5
+  },
+  {
+   "word": "Şimdi",
+   "start": 35.5,
+   "end": 35.9
+  },
+  {
+   "word": "iki",
+   "start": 36.06,
+   "end": 36.12
+  },
+  {
+   "word": "camiyi",
+   "start": 36.12,
+   "end": 36.52
+  },
+  {
+   "word": "birden",
+   "start": 36.52,
+   "end": 36.84
+  },
+  {
+   "word": "gören",
+   "start": 36.84,
+   "end": 37.08
+  },
+  {
+   "word": "bir",
+   "start": 37.08,
+   "end": 37.2
+  },
+  {
+   "word": "yere",
+   "start": 37.2,
+   "end": 37.38
+  },
+  {
+   "word": "çıkın",
+   "start": 37.38,
+   "end": 37.7
+  },
+  {
+   "word": "ve",
+   "start": 37.96,
+   "end": 38.18
+  },
+  {
+   "word": "21",
+   "start": 38.18,
+   "end": 38.46
+  },
+  {
+   "word": "Mart'ı,",
+   "start": 38.46,
+   "end": 38.86
+  },
+  {
+   "word": "gece",
+   "start": 38.86,
+   "end": 39.26
+  },
+  {
+   "word": "ile",
+   "start": 39.26,
+   "end": 39.66
+  },
+  {
+   "word": "gündüzün",
+   "start": 39.66,
+   "end": 40.08
+  },
+  {
+   "word": "eşitlendiği",
+   "start": 40.14,
+   "end": 40.68
+  },
+  {
+   "word": "günü",
+   "start": 40.68,
+   "end": 40.88
+  },
+  {
+   "word": "bekleyin.",
+   "start": 40.88,
+   "end": 41.6
+  },
+  {
+   "word": "Edirnekapı'nın",
+   "start": 41.9,
+   "end": 42.52
+  },
+  {
+   "word": "tek",
+   "start": 42.52,
+   "end": 42.78
+  },
+  {
+   "word": "minaresinin",
+   "start": 42.78,
+   "end": 43.34
+  },
+  {
+   "word": "ardında",
+   "start": 43.34,
+   "end": 43.7
+  },
+  {
+   "word": "kıpkırmızı",
+   "start": 43.7,
+   "end": 44.44
+  },
+  {
+   "word": "güneş",
+   "start": 44.44,
+   "end": 44.68
+  },
+  {
+   "word": "batarken,",
+   "start": 44.68,
+   "end": 45.18
+  },
+  {
+   "word": "Üsküdar'ın",
+   "start": 45.18,
+   "end": 46.16
+  },
+  {
+   "word": "ardından",
+   "start": 46.16,
+   "end": 46.64
+  },
+  {
+   "word": "ay",
+   "start": 46.64,
+   "end": 47.0
+  },
+  {
+   "word": "doğuyor.",
+   "start": 47.0,
+   "end": 47.62
+  },
+  {
+   "word": "Ve",
+   "start": 48.04,
+   "end": 48.16
+  },
+  {
+   "word": "21",
+   "start": 48.16,
+   "end": 48.48
+  },
+  {
+   "word": "Mart,",
+   "start": 48.48,
+   "end": 48.84
+  },
+  {
+   "word": "Mihrimah'ın",
+   "start": 48.84,
+   "end": 49.72
+  },
+  {
+   "word": "doğum",
+   "start": 49.72,
+   "end": 50.04
+  },
+  {
+   "word": "günü.",
+   "start": 50.04,
+   "end": 50.48
+  },
+  {
+   "word": "Çünkü",
+   "start": 50.86,
+   "end": 51.04
+  },
+  {
+   "word": "Mihrimah'ın",
+   "start": 51.04,
+   "end": 51.66
+  },
+  {
+   "word": "adı,",
+   "start": 51.66,
+   "end": 51.92
+  },
+  {
+   "word": "güneş",
+   "start": 51.92,
+   "end": 52.74
+  },
+  {
+   "word": "ve",
+   "start": 52.74,
+   "end": 52.98
+  },
+  {
+   "word": "ay",
+   "start": 52.98,
+   "end": 53.24
+  },
+  {
+   "word": "demek.",
+   "start": 53.24,
+   "end": 53.72
+  }
+ ],
+ "duration": 54.081
+}

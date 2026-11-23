@@ -2,578 +2,579 @@
  "words": [
   {
    "word": "Mimar",
-   "start": 0.03,
-   "end": 0.278
+   "start": 0.0,
+   "end": 0.4
   },
   {
    "word": "Sinan,",
-   "start": 0.298,
-   "end": 0.546
+   "start": 0.4,
+   "end": 0.72
   },
   {
    "word": "aşamadığı",
-   "start": 0.696,
-   "end": 1.316
+   "start": 0.72,
+   "end": 1.34
   },
   {
    "word": "bir",
-   "start": 1.336,
+   "start": 1.34,
    "end": 1.46
   },
   {
    "word": "aşkı",
-   "start": 1.48,
-   "end": 1.728
+   "start": 1.46,
+   "end": 1.84
   },
   {
    "word": "iki",
-   "start": 1.748,
-   "end": 1.996
+   "start": 1.84,
+   "end": 2.06
   },
   {
    "word": "camiye",
-   "start": 2.016,
-   "end": 2.388
+   "start": 2.06,
+   "end": 2.5
   },
   {
    "word": "sakladı:",
-   "start": 2.408,
-   "end": 2.78
+   "start": 2.5,
+   "end": 3.08
   },
   {
    "word": "biri",
-   "start": 2.93,
-   "end": 3.178
+   "start": 3.18,
+   "end": 3.38
   },
   {
    "word": "güneşi",
-   "start": 3.198,
-   "end": 3.57
+   "start": 3.38,
+   "end": 3.7
   },
   {
    "word": "uğurluyor,",
-   "start": 3.59,
-   "end": 4.086
+   "start": 3.7,
+   "end": 4.38
   },
   {
    "word": "öbürü",
-   "start": 4.236,
-   "end": 4.608
+   "start": 4.38,
+   "end": 4.6
   },
   {
    "word": "ayı",
-   "start": 4.628,
-   "end": 4.876
+   "start": 4.6,
+   "end": 4.9
   },
   {
    "word": "karşılıyor.",
-   "start": 4.896,
-   "end": 5.392
+   "start": 4.9,
+   "end": 5.48
   },
   {
    "word": "Bakın,",
-   "start": 5.652,
-   "end": 5.9
+   "start": 5.84,
+   "end": 6.04
   },
   {
    "word": "anlatılana",
-   "start": 6.05,
-   "end": 6.67
+   "start": 6.04,
+   "end": 6.52
   },
   {
    "word": "göre",
-   "start": 6.69,
-   "end": 6.938
+   "start": 6.52,
+   "end": 6.7
   },
   {
    "word": "Sinan",
-   "start": 6.958,
-   "end": 7.206
+   "start": 6.7,
+   "end": 7.04
   },
   {
    "word": "ellisinde,",
-   "start": 7.226,
-   "end": 7.722
+   "start": 7.04,
+   "end": 7.76
   },
   {
    "word": "evli",
-   "start": 7.872,
-   "end": 8.12
+   "start": 7.86,
+   "end": 8.14
   },
   {
    "word": "ve",
    "start": 8.14,
-   "end": 8.264
+   "end": 8.4
   },
   {
    "word": "padişahın",
-   "start": 8.284,
-   "end": 8.78
+   "start": 8.4,
+   "end": 8.92
   },
   {
    "word": "kızı",
-   "start": 8.8,
-   "end": 9.048
+   "start": 8.92,
+   "end": 9.18
   },
   {
    "word": "Mihrimah",
-   "start": 9.068,
-   "end": 9.44
+   "start": 9.18,
+   "end": 9.57
   },
   {
    "word": "Sultan'a",
-   "start": 9.46,
-   "end": 9.832
+   "start": 9.57,
+   "end": 9.96
   },
   {
    "word": "deliler",
-   "start": 9.852,
-   "end": 10.224
+   "start": 9.96,
+   "end": 10.36
   },
   {
    "word": "gibi",
-   "start": 10.244,
-   "end": 10.492
+   "start": 10.36,
+   "end": 10.56
   },
   {
    "word": "âşık.",
-   "start": 10.512,
-   "end": 10.76
+   "start": 10.56,
+   "end": 11.12
   },
   {
    "word": "Kavuşmak",
-   "start": 11.02,
-   "end": 11.392
+   "start": 11.38,
+   "end": 11.78
   },
   {
    "word": "mı?",
-   "start": 11.412,
-   "end": 11.536
+   "start": 11.78,
+   "end": 12.02
   },
   {
    "word": "Olacak",
-   "start": 11.796,
-   "end": 12.168
+   "start": 12.02,
+   "end": 12.36
   },
   {
    "word": "iş",
-   "start": 12.188,
-   "end": 12.312
+   "start": 12.36,
+   "end": 12.52
   },
   {
    "word": "değil.",
-   "start": 12.332,
-   "end": 12.58
+   "start": 12.52,
+   "end": 12.86
   },
   {
    "word": "Sinan",
-   "start": 12.84,
-   "end": 13.088
+   "start": 13.08,
+   "end": 13.28
   },
   {
    "word": "da",
-   "start": 13.108,
-   "end": 13.232
+   "start": 13.28,
+   "end": 13.4
   },
   {
    "word": "aşkını",
-   "start": 13.252,
-   "end": 13.624
+   "start": 13.4,
+   "end": 13.76
   },
   {
    "word": "taşa",
-   "start": 13.644,
-   "end": 13.892
+   "start": 13.76,
+   "end": 14.06
   },
   {
    "word": "yazıyor.",
-   "start": 13.912,
-   "end": 14.284
+   "start": 14.06,
+   "end": 14.56
   },
   {
    "word": "Önce",
-   "start": 14.544,
-   "end": 14.792
+   "start": 14.8,
+   "end": 15.0
   },
   {
    "word": "Üsküdar'a",
-   "start": 14.812,
-   "end": 15.308
+   "start": 15.0,
+   "end": 15.38
   },
   {
    "word": "bir",
-   "start": 15.328,
-   "end": 15.452
+   "start": 15.38,
+   "end": 15.46
   },
   {
    "word": "cami:",
-   "start": 15.472,
-   "end": 15.72
+   "start": 15.46,
+   "end": 15.88
   },
   {
    "word": "uzaktan",
-   "start": 15.87,
-   "end": 16.242
+   "start": 16.04,
+   "end": 16.36
   },
   {
    "word": "bakınca,",
-   "start": 16.262,
-   "end": 16.634
+   "start": 16.36,
+   "end": 16.66
   },
   {
    "word": "etekleri",
-   "start": 16.784,
-   "end": 17.28
+   "start": 16.66,
+   "end": 17.04
   },
   {
    "word": "yerleri",
-   "start": 17.3,
-   "end": 17.672
+   "start": 17.04,
+   "end": 17.4
   },
   {
    "word": "süpüren",
-   "start": 17.692,
-   "end": 18.064
+   "start": 17.4,
+   "end": 17.72
   },
   {
    "word": "bir",
-   "start": 18.084,
-   "end": 18.208
+   "start": 17.72,
+   "end": 17.82
   },
   {
    "word": "kadın.",
-   "start": 18.228,
-   "end": 18.476
+   "start": 17.82,
+   "end": 18.2
   },
   {
    "word": "Sonra",
-   "start": 18.736,
-   "end": 18.984
+   "start": 18.34,
+   "end": 18.5
   },
   {
    "word": "Edirnekapı'da,",
-   "start": 19.004,
-   "end": 19.748
+   "start": 18.5,
+   "end": 19.18
   },
   {
    "word": "şehrin",
-   "start": 19.898,
-   "end": 20.146
+   "start": 19.18,
+   "end": 19.7
   },
   {
    "word": "en",
-   "start": 20.166,
-   "end": 20.29
+   "start": 19.7,
+   "end": 19.88
   },
   {
    "word": "yüksek",
-   "start": 20.31,
-   "end": 20.558
+   "start": 19.88,
+   "end": 20.22
   },
   {
    "word": "tepelerinden",
-   "start": 20.578,
-   "end": 21.198
+   "start": 20.22,
+   "end": 20.7
   },
   {
    "word": "birine",
-   "start": 21.218,
-   "end": 21.59
+   "start": 20.7,
+   "end": 20.98
   },
   {
    "word": "ikincisi.",
-   "start": 21.61,
-   "end": 22.106
+   "start": 20.98,
+   "end": 21.56
   },
   {
    "word": "Tek",
-   "start": 22.366,
-   "end": 22.49
+   "start": 21.72,
+   "end": 21.92
   },
   {
    "word": "minare,",
-   "start": 22.51,
-   "end": 22.882
+   "start": 21.92,
+   "end": 22.7
   },
   {
    "word": "incecik",
-   "start": 23.032,
-   "end": 23.404
+   "start": 22.7,
+   "end": 23.18
   },
   {
    "word": "bir",
-   "start": 23.424,
-   "end": 23.548
+   "start": 23.18,
+   "end": 23.28
   },
   {
    "word": "kubbe",
-   "start": 23.568,
-   "end": 23.816
+   "start": 23.28,
+   "end": 23.62
   },
   {
    "word": "ve",
-   "start": 23.836,
-   "end": 23.96
+   "start": 23.62,
+   "end": 23.78
   },
   {
    "word": "kubbeyi",
-   "start": 23.98,
-   "end": 24.352
+   "start": 23.78,
+   "end": 24.24
   },
   {
    "word": "delen",
-   "start": 24.372,
-   "end": 24.62
+   "start": 24.24,
+   "end": 24.46
   },
   {
    "word": "yüzlerce",
-   "start": 24.64,
-   "end": 25.012
+   "start": 24.46,
+   "end": 25.08
   },
   {
    "word": "pencere.",
-   "start": 25.032,
-   "end": 25.404
+   "start": 25.08,
+   "end": 25.64
   },
   {
    "word": "İçerideki",
-   "start": 25.664,
-   "end": 26.284
+   "start": 25.86,
+   "end": 26.28
   },
   {
    "word": "sarkıtlar,",
-   "start": 26.304,
-   "end": 26.676
+   "start": 26.28,
+   "end": 26.8
   },
   {
    "word": "onun",
-   "start": 26.826,
-   "end": 27.074
+   "start": 26.8,
+   "end": 27.26
   },
   {
    "word": "topuklarına",
-   "start": 27.094,
-   "end": 27.714
+   "start": 27.26,
+   "end": 27.86
   },
   {
    "word": "dökülen",
-   "start": 27.734,
-   "end": 28.106
+   "start": 27.86,
+   "end": 28.22
   },
   {
    "word": "saçlarını",
-   "start": 28.126,
-   "end": 28.622
+   "start": 28.22,
+   "end": 28.76
   },
   {
    "word": "andırıyor.",
-   "start": 28.642,
-   "end": 29.138
+   "start": 28.76,
+   "end": 29.26
   },
   {
    "word": "Şimdi",
-   "start": 29.398,
-   "end": 29.646
+   "start": 29.4,
+   "end": 29.58
   },
   {
    "word": "iki",
-   "start": 29.666,
-   "end": 29.914
+   "start": 29.58,
+   "end": 29.76
   },
   {
    "word": "camiyi",
-   "start": 29.934,
-   "end": 30.306
+   "start": 29.76,
+   "end": 30.12
   },
   {
    "word": "birden",
-   "start": 30.326,
-   "end": 30.574
+   "start": 30.12,
+   "end": 30.4
   },
   {
    "word": "gören",
-   "start": 30.594,
-   "end": 30.842
+   "start": 30.4,
+   "end": 30.62
   },
   {
    "word": "bir",
-   "start": 30.862,
-   "end": 30.986
+   "start": 30.62,
+   "end": 30.74
   },
   {
    "word": "yere",
-   "start": 31.006,
-   "end": 31.254
+   "start": 30.74,
+   "end": 30.88
   },
   {
    "word": "çıkın",
-   "start": 31.274,
-   "end": 31.522
+   "start": 30.88,
+   "end": 31.28
   },
   {
    "word": "ve",
-   "start": 31.542,
-   "end": 31.666
+   "start": 31.32,
+   "end": 31.36
   },
   {
    "word": "21",
-   "start": 31.686,
-   "end": 32.306
+   "start": 31.36,
+   "end": 31.6
   },
   {
    "word": "Mart'ı,",
-   "start": 32.326,
-   "end": 32.574
+   "start": 31.6,
+   "end": 31.9
   },
   {
    "word": "gece",
-   "start": 32.724,
-   "end": 32.972
+   "start": 31.9,
+   "end": 32.2
   },
   {
    "word": "ile",
-   "start": 32.992,
-   "end": 33.24
+   "start": 32.2,
+   "end": 32.5
   },
   {
    "word": "gündüzün",
-   "start": 33.26,
-   "end": 33.632
+   "start": 32.5,
+   "end": 32.88
   },
   {
    "word": "eşitlendiği",
-   "start": 33.652,
-   "end": 34.272
+   "start": 32.88,
+   "end": 33.38
   },
   {
    "word": "günü",
-   "start": 34.292,
-   "end": 34.54
+   "start": 33.38,
+   "end": 33.56
   },
   {
    "word": "bekleyin.",
-   "start": 34.56,
-   "end": 34.932
+   "start": 33.56,
+   "end": 34.1
   },
   {
    "word": "Edirnekapı'nın",
-   "start": 35.192,
-   "end": 35.936
+   "start": 34.22,
+   "end": 34.78
   },
   {
    "word": "tek",
-   "start": 35.956,
-   "end": 36.08
+   "start": 34.78,
+   "end": 35.0
   },
   {
    "word": "minaresinin",
-   "start": 36.1,
-   "end": 36.72
+   "start": 35.0,
+   "end": 35.52
   },
   {
    "word": "ardında",
-   "start": 36.74,
-   "end": 37.112
+   "start": 35.52,
+   "end": 35.84
   },
   {
    "word": "kıpkırmızı",
-   "start": 37.132,
-   "end": 37.628
+   "start": 35.84,
+   "end": 36.46
   },
   {
    "word": "güneş",
-   "start": 37.648,
-   "end": 37.896
+   "start": 36.46,
+   "end": 36.7
   },
   {
    "word": "batarken,",
-   "start": 37.916,
-   "end": 38.288
+   "start": 36.7,
+   "end": 37.14
   },
   {
    "word": "Üsküdar'ın",
-   "start": 38.438,
-   "end": 38.934
+   "start": 37.14,
+   "end": 37.92
   },
   {
    "word": "ardından",
-   "start": 38.954,
-   "end": 39.326
+   "start": 37.92,
+   "end": 38.34
   },
   {
    "word": "ay",
-   "start": 39.346,
-   "end": 39.47
+   "start": 38.34,
+   "end": 38.66
   },
   {
    "word": "doğuyor.",
-   "start": 39.49,
-   "end": 39.862
+   "start": 38.66,
+   "end": 39.14
   },
   {
    "word": "Ve",
-   "start": 40.122,
-   "end": 40.246
+   "start": 39.22,
+   "end": 39.32
   },
   {
    "word": "21",
-   "start": 40.266,
-   "end": 40.886
+   "start": 39.32,
+   "end": 39.58
   },
   {
    "word": "Mart,",
-   "start": 40.906,
-   "end": 41.03
+   "start": 39.58,
+   "end": 39.92
   },
   {
    "word": "Mihrimah'ın",
-   "start": 41.18,
-   "end": 41.676
+   "start": 39.92,
+   "end": 40.56
   },
   {
    "word": "doğum",
-   "start": 41.696,
-   "end": 41.944
+   "start": 40.56,
+   "end": 40.86
   },
   {
    "word": "günü.",
-   "start": 41.964,
-   "end": 42.212
+   "start": 40.86,
+   "end": 41.16
   },
   {
    "word": "Çünkü",
-   "start": 42.472,
-   "end": 42.72
+   "start": 41.34,
+   "end": 41.44
   },
   {
    "word": "Mihrimah'ın",
-   "start": 42.74,
-   "end": 43.236
+   "start": 41.44,
+   "end": 41.98
   },
   {
    "word": "adı,",
-   "start": 43.256,
-   "end": 43.504
+   "start": 41.98,
+   "end": 42.18
   },
   {
    "word": "güneş",
-   "start": 43.654,
-   "end": 43.902
+   "start": 42.18,
+   "end": 42.64
   },
   {
    "word": "ve",
-   "start": 43.922,
-   "end": 44.046
+   "start": 42.64,
+   "end": 42.86
   },
   {
    "word": "ay",
-   "start": 44.066,
-   "end": 44.19
+   "start": 42.86,
+   "end": 43.1
   },
   {
    "word": "demek.",
-   "start": 44.21,
-   "end": 44.458
+   "start": 43.1,
+   "end": 43.52
   }
- ]
+ ],
+ "duration": 43.782
 }

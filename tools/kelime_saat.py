@@ -1,15 +1,16 @@
 # kelime_saat.py — word timings for a voice file, aligned back onto the exact script words.
 #   python kelime_saat.py <voice.wav> <script.txt> <out.json> [language=turkish]
 # Whisper hears the words (and may misspell them); we keep the SCRIPT's spelling and take only the times.
-import sys, json, re, difflib
+import sys, json, re, difflib, os
 import torch, librosa
 from transformers import pipeline
 
 wav, script, out = sys.argv[1], sys.argv[2], sys.argv[3]
 lang = sys.argv[4] if len(sys.argv) > 4 else 'turkish'
 dev = 'cuda' if torch.cuda.is_available() else 'cpu'
-p = pipeline('automatic-speech-recognition', model='openai/whisper-large-v3-turbo', device=dev,
-             torch_dtype=torch.float16 if dev == 'cuda' else torch.float32)
+# WHISPER_MODEL / WHISPER_BF16=1 for machines with little memory (bf16 halves it on CPU)
+p = pipeline('automatic-speech-recognition', model=os.environ.get('WHISPER_MODEL', 'openai/whisper-large-v3-turbo'), device=dev,
+             torch_dtype=torch.float16 if dev == 'cuda' else (torch.bfloat16 if os.environ.get('WHISPER_BF16') else torch.float32))
 y, _ = librosa.load(wav, sr=16000)
 r = p({'raw': y, 'sampling_rate': 16000}, return_timestamps='word', chunk_length_s=30,
       generate_kwargs={'language': lang})
