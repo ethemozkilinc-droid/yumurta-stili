@@ -1,0 +1,96 @@
+{
+ "DUR": 63.56666666666667,
+ "cues": [
+  {
+   "t": 9.26,
+   "type": "whoosh"
+  },
+  {
+   "t": 24.11,
+   "type": "whoosh"
+  },
+  {
+   "t": 39.5,
+   "type": "whoosh"
+  },
+  {
+   "t": 2.99,
+   "type": "rise",
+   "dur": 0.4
+  },
+  {
+   "t": 17.16,
+   "type": "rise",
+   "dur": 0.4
+  },
+  {
+   "t": 20.44,
+   "type": "rise",
+   "dur": 0.4
+  },
+  {
+   "t": 56.34,
+   "type": "rise",
+   "dur": 0.4
+  },
+  {
+   "t": 43.53,
+   "type": "rise",
+   "dur": 0.3
+  },
+  {
+   "t": 45.43,
+   "type": "rise",
+   "dur": 0.3
+  },
+  {
+   "t": 47.05,
+   "type": "rise",
+   "dur": 0.3
+  },
+  {
+   "t": 48.99,
+   "type": "rise",
+   "dur": 0.3
+  },
+  {
+   "t": 7.9,
+   "type": "shimmer"
+  },
+  {
+   "t": 21.72,
+   "type": "wind",
+   "dur": 2.6
+  },
+  {
+   "t": 29.98,
+   "type": "boom"
+  },
+  {
+   "t": 32.12,
+   "type": "lamps",
+   "dur": 6
+  },
+  {
+   "t": 37.02,
+   "type": "lock"
+  },
+  {
+   "t": 38.64,
+   "type": "wind",
+   "dur": 1.2
+  },
+  {
+   "t": 52.36,
+   "type": "shimmer"
+  },
+  {
+   "t": 57.08,
+   "type": "shimmer"
+  },
+  {
+   "t": 61.82,
+   "type": "shimmer"
+  }
+ ]
+}

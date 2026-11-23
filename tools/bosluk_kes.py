@@ -32,6 +32,9 @@ def kind(t):          # punctuation of the last word that started before this pa
     return 'end' if p[-1:] in '.:?!' else 'comma' if p[-1:] in ',;' else 'mid'
 
 TARGET = {'lead': .03, 'end': .22, 'comma': .14, 'mid': .09}
+# PAUSES='end=.34,comma=.18' overrides the targets (a calmer read that is easier to follow)
+import os
+for kv in filter(None, os.environ.get('PAUSES', '').split(',')): k, v = kv.split('='); TARGET[k.strip()] = float(v)
 keep, cur, log = [], 0, []
 for a, b in runs:
     dur = (b - a) / SR
